@@ -17,7 +17,6 @@ jobs:
           name: carlthome
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
       - run: nix flake show
-      - run: nix develop
-      - run: poetry install
-      - run: poetry run pytest
       - run: nix build
+      - run: nix develop --install
+      - run: nix develop --check
