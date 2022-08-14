@@ -6,7 +6,7 @@
 1. git init
 1. nix flake init -t templates#poetry
 1. git add .
-1. direnv allow
+1. nix develop
 1. poetry init
 
 ## Poetry
