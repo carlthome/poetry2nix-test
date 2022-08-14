@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "my_package"
+version = "0.1.0"
+description = ""
+authors = ["Carl Thomé <carlthome@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^1.12.1"
+torchvision = "^0.13.1"
+torchmetrics = "^0.9.3"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+pytest = "^7.1.2"
+
+[tool.poetry.scripts]
+my-package = "my_package.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
